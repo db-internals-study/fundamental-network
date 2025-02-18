@@ -1,0 +1,49 @@
+# Chpater 1
+
+- Datacenter Network
+  - 3-tier arch to 2-tier arch(Spine-Leaf)
+  - For Inter-server traffic
+  - Normal Server (10G Base-T Ethernet Port) <--> TOR switch
+  - TOR switch <--> Spine Switch (40G, 100G)
+- Protocol
+  - Once upon a time, Limited resource for communication
+  - TCP/IP is not a protocol, but a protocol stack (TCP is a protocol, UDP is a protocol)
+  - TCP/IP Model (4 layer)
+    - Application - Transport - Internet - Network Access
+  - Term : PDU(Protocol Data Unit)
+- OSI 7
+  - Physical : Accurately send signal
+    - Hub, Repeater : Connect devices
+    - Cable, Connector : Cable
+    - Tranceiver : Connect computer's lan card with cable
+    - TAP : Replicate electronic signal to other machine for monitoring network and analyzing packets
+  - Data Link : Check addresses and process/validate data
+    - Flow Control
+      - Sender : Hey, receiver! Can you get data now?
+      - with "Pause" Frame 
+    - NIC(Network Interface Card) & Switch with MAC
+      - NIC : Check MAC
+      - Switch : Port filtering & forwarding
+  - Network (IP)
+    - Router : Find the path for packet
+  - Transport
+    - Correct packet sequence and loss
+    - Send sequence : Seq number
+    - Receive sequence : ACK number
+    - LB & Firewall
+  - Session
+    - Help establishing connection and maintaining for edge application
+    - Recovering error and retransmission
+  - Presentation
+    - MIME encoding, Encryption, compression and etc
+  - Application
+    - HTTP, FTP, SMTP
+- Encapsulation & Decapsulation
+  - Add 3 Headers on Data Flow Layer
+  - Decapsulation side : What upper protocol should I use to send?
+    - with Protocol number, Port number, Ether type
+- Term
+  - MSS : Maximum Segment Size (Layer 4, 1460 bytes)
+  - MTU : Maximum Transmission Unit (Layer 2, 1500 bytes, 20 for IP header, 20 for TCP header)
+
+
