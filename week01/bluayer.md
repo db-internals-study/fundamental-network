@@ -1,4 +1,4 @@
-# Chpater 1
+# Chapter 1
 
 - Datacenter Network
   - 3-tier arch to 2-tier arch(Spine-Leaf)
