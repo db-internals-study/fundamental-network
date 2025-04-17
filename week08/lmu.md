@@ -15,6 +15,8 @@
 - 
 
 ### 8.2.2. 리눅스 서버의 라우팅 확인 및 관리
+- 참고자료: https://pr0gr4m.github.io/linux/kernel/ipv4_routing/
+
 ```
 ip route
 ```
